@@ -10,6 +10,8 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\""
   },
   "dependencies": {
+    "@nextui-org/react": "^2.4.8",
+    "framer-motion": "^11.11.11",
     "next": "14.2.16",
     "outstatic": "^1.4.9",
     "react": "^18",
