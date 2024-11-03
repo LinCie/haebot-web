@@ -7,6 +7,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import theme from "../theme";
 
 import "./globals.css";
+import DrawerAppBar from "@/components/layout/appbar";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -31,7 +32,10 @@ export default function RootLayout({
       <body className={`${roboto.className}`}>
         <CssBaseline />
         <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>{children}</ThemeProvider>
+          <ThemeProvider theme={theme}>
+            <DrawerAppBar />
+            {children}
+          </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
